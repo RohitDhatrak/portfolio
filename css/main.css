@@ -17,6 +17,7 @@
 
 html {
     box-sizing: border-box;
+    margin: none;
 }
 
 body {
@@ -60,6 +61,7 @@ body {
 .section {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .hero {
@@ -84,7 +86,7 @@ body {
     padding: 0rem 1rem;
     padding: 2rem;
     margin-bottom: 1em;
-    width: 30em;
+    width: 35em;
     border-radius: 1em;
 }
 
@@ -159,7 +161,6 @@ body {
         padding: 2em 0em;
     }
     .nav-brand {
-        font-weight: bold;
         font-size: var(--fontSize-3);
         padding-left: 0em;
         padding-bottom: 1em;
@@ -174,5 +175,33 @@ body {
     }
     .links {
         font-size: var(--fontSize-2);
+    }
+    .hero .hero-img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 991px) {
+    .container {
+        margin-bottom: 1em;
+        width: 90%;
+    }
+    .img2 {
+        display: none;
+    }
+}
+
+@media (max-width: 880px) and (min-width: 600px) {
+    .nav-brand {
+        font-size: var(--fontSize-5);
+        padding-left: 0em;
+        padding-bottom: 1em;
+        text-align: center;
+    }
+    .navs {
+        text-align: center;
+    }
+    .links {
+        font-size: var(--fontSize-3);
     }
 }
