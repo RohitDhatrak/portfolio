@@ -1,11 +1,13 @@
 :root {
     --primary-colour: #005b99;
     --off-white: #f3f4f6;
+    --white-smoke: #f5f5f5;
     --fontSize-0: 0.833rem;
     --fontSize-1: 1rem;
     --fontSize-2: 1.2rem;
     --fontSize-3: 1.44rem;
     --fontSize-4: 1.728rem;
+    --fontSize-5: 2rem;
     --fontSize-5: 2rem;
 }
 
@@ -27,7 +29,7 @@ body {
 
 .navigation {
     background-color: var(--primary-colour);
-    color: whitesmoke;
+    color: var(--white-smoke);
     padding: 2em 4em;
     border-radius: 0em 0em 1em 1em;
 }
@@ -35,7 +37,8 @@ body {
 .nav-brand {
     font-weight: bold;
     font-size: var(--fontSize-5);
-    padding-left: 1em;
+    text-decoration: none;
+    color: var(--white-smoke);
 }
 
 .list-non-bullet {
@@ -49,11 +52,16 @@ body {
 
 .list-item-inline {
     display: inline;
-    padding: 1rem 1.5rem;
+    padding: 0.5rem 0;
+    margin-left: 3em;
+}
+
+.list-item-inline:hover {
+    border-bottom: var(--white-smoke) solid 0.1em;
 }
 
 .links {
-    color: whitesmoke;
+    color: var(--white-smoke);
     font-size: var(--fontSize-3);
     text-decoration: none;
 }
@@ -110,12 +118,12 @@ body {
     background-color: var(--primary-colour);
     padding: 2rem 1rem;
     text-align: center;
-    color: white;
+    color: var(--white-smoke);
     border-radius: 1em 1em 0em 0em;
 }
 
 .footer .link {
-    color: white;
+    color: var(--white-smoke);
 }
 
 .footer .footer-header {
@@ -152,11 +160,11 @@ body {
 }
 
 .contact-links {
-    text-align: center;
+    margin-left: 2em;
 }
 
-.contact-list {
-    padding-bottom: 2em;
+.contact-images {
+    width: 1.5em;
 }
 
 /* media queries */
@@ -172,6 +180,8 @@ body {
     }
     .navs {
         text-align: center;
+        /* font-size: 0.2rem; */
+        /* padding: 0 1em; */
     }
     .list-item-inline {
         display: inline;
