@@ -2,6 +2,7 @@
     --primary-colour: #005b99;
     --off-white: #f3f4f6;
     --white-smoke: #f5f5f5;
+    --fontSize-02: 0.2rem;
     --fontSize-0: 0.833rem;
     --fontSize-1: 1rem;
     --fontSize-2: 1.2rem;
@@ -52,8 +53,8 @@ body {
 
 .list-item-inline {
     display: inline;
-    padding: 0.5rem 0;
-    margin-left: 3em;
+    padding: 1em 1em;
+    margin-left: 1em;
 }
 
 .list-item-inline:hover {
@@ -159,8 +160,13 @@ body {
     padding: 0.4em;
 }
 
-.contact-links {
-    margin-left: 2em;
+.contact-div {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    max-width: 25em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .contact-images {
@@ -173,15 +179,14 @@ body {
         padding: 2em 0em;
     }
     .nav-brand {
-        font-size: var(--fontSize-3);
+        font-size: var(--fontSize-4);
         padding-left: 0em;
         padding-bottom: 1em;
         text-align: center;
     }
     .navs {
         text-align: center;
-        /* font-size: 0.2rem; */
-        /* padding: 0 1em; */
+        font-size: var(--fontSize-02);
     }
     .list-item-inline {
         display: inline;
