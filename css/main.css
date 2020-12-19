@@ -85,6 +85,13 @@ body {
     color: var(--primary-colour);
 }
 
+.other-projects {
+    color: var(--primary-colour);
+    float: right;
+    margin-right: 2em;
+    font-size: 1.3rem;
+}
+
 .hero {
     /* padding: 2rem; */
     padding-top: 4rem;
